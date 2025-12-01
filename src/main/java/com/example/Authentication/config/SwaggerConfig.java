@@ -20,7 +20,7 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("🍪 Authentication Service - API")
+                        .title("Authentication Service - API")
                         .version("1.0.0")
                         .description("API REST para autenticación y gestión de usuarios")
                         .contact(new Contact()
@@ -30,7 +30,7 @@ public class SwaggerConfig {
                                 .name("Apache 2.0")
                                 .url("https://www.apache.org/licenses/LICENSE-2.0.html")))
                 .servers(List.of(
-                        new Server().url("http://localhost:8080").description("Servidor Local")
+                        new Server().url("http://localhost:8081").description("Servidor Local - Servicio de Autenticación")
                 ))
                 .components(new Components()
                         .addSecuritySchemes("bearer-jwt", new SecurityScheme()
